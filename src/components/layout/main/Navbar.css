@@ -1,0 +1,63 @@
+.MainNavbar-navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    overflow: auto;
+    text-align: center;
+    line-height: 50px;
+    background-color: black;
+    width: 100%;
+    z-index: 3;
+}
+
+.MainNavbar-navbarFixed {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    overflow: auto;
+    text-align: center;
+    line-height: 50px;
+    /*background-color: rgba(50, 50, 50, 0.22);*/
+    background-color: black;
+    width: 100%;
+    z-index: 3;
+}
+
+.MainNavbar-navbarItem {
+    color: white;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 200px;
+    cursor: pointer;
+}
+
+.MainNavbar-navbarItem:hover {
+    color: #F1FF5A;
+}
+
+.MainNavbar-navbarItemCollapse {
+    color: white;
+    display: none;
+    width: 80px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.MainNavbar-navbarItemCollapse:hover {
+    color: #F1FF5A;
+}
+
+@media screen and (max-width: 800px) {
+
+.MainNavbar-navbarItem {
+    display: none;
+}
+
+.MainNavbar-navbarItemCollapse {
+    display: inline-block;
+}
+
+}

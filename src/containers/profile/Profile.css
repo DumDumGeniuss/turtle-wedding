@@ -1,0 +1,95 @@
+.Profile-mainArea {
+	/*background-color: black;*/
+	position: relative;
+	perspective: 100px;
+	overflow: hidden;
+	background-color: black;
+}
+
+.Profile-backgroundImg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 0;
+}
+
+.Profile-starWarsAudio {
+	display: none;
+}
+
+.Profile-functionIcon {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid yellow;
+}
+
+.Profile-functionIcon > svg {
+	display: inline-block;
+	color: yellow;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+}
+
+.Profile-functionIcon > svg:hover {
+	cursor: pointer;
+}
+
+.Profile-pauseIcon {
+	top: 70px;
+	right: 20px;
+}
+
+.Profile-playIcon {
+	top: 70px;
+	right: 20px;
+}
+
+.Profile-starWarView {
+	/*transform: rotateX(60deg)*/;
+	height: calc(100vh - 100px);
+	width: 60%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.Profile-starWarScroll {
+	/*margin-top: -1000px;*/
+/*	animation: starWarScroll 40s linear;*/
+}
+
+.Profile-h1 {
+	color: #ba9e17;
+	text-align: center;
+}
+
+.Profile-h3 {
+	color: #ba9e17;
+	text-align: center;
+}
+
+.Profile-li {
+	color: #ba9e17;
+	text-align: center;
+}
+
+.Profile-span {
+	display: block;
+	color: #ba9e17;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+.Profile-backgroundImg {
+	left: -50%;
+	width: 200%;
+}
+
+}

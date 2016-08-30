@@ -1,0 +1,307 @@
+.Welcome-universeBackgroundArea {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    animation: dayAndNight 20s infinite linear;
+    overflow: hidden;
+}
+
+@keyframes dayAndNight {
+    0% {
+        background-color: #1a38ce;
+    }
+    6.25% {
+        background-color: black;
+    }
+    43.75% {
+        background-color: black;
+    }
+    50% {
+        background-color: #1a38ce;
+    }
+    56.25% {
+        background-color: #0296ff;
+    }
+    93.25% {
+        background-color: #0296ff;
+    }
+    100% {
+        background-color: #1a38ce;
+    }
+}
+
+.Welcome-Earth {
+    position: absolute;
+    top: calc(100vh - 250px);
+    left: calc(50% - 200px);
+    height: 400px;
+    width: 400px;
+    color: blue;
+    border-radius: 400px;
+    background-color: green;
+    z-index: 2;
+    animation: selfRotation 20s infinite linear;
+}
+
+.Welcome-SunAndMoon {
+    position: absolute;
+    top: calc(100vh - 135px);
+    height: 70px;
+    width: 100%;
+    animation: SunMoonRotate 20s infinite linear;
+    z-index: 2;
+}
+
+@keyframes SunMoonRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.Welcome-MoonO {
+    position: absolute;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    color: yellow;
+    animation: selfRotation 20s infinite linear;
+}
+
+.Welcome-SunO {
+    position: absolute;
+    left:10px;
+    width: 70px;
+    height: 70px;
+    color: yellow;
+    animation: selfRotation 20s infinite linear;
+}
+
+@keyframes selfRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Welcome-textArea {
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+.Welcome-centerText {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 0px 0px 0px;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 2.5em;
+    font-family: cursive;
+    z-index: 3;
+}
+
+.Welcome-logoArea {
+    position: absolute;
+    top: calc(100vh - 160px);
+    right: calc(50% - 86px);
+    display: block;
+    width: 172px;
+    margin: 0px auto;
+    z-index: 3;
+}
+
+.Welcome-faIcon {
+    color: white;
+    font-size: 34px;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 35px;
+    cursor: pointer
+}
+
+.Welcome-night {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    animation: night 20s infinite linear;
+}
+
+.Welcome-star {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+}
+
+.Welcome-star-1 {
+    left: 50%;
+    top: 35%;
+    animation: blink 1s infinite linear;
+}
+
+.Welcome-star-2 {
+    top: 25%;
+    left: 80%;
+    animation: blink 1.4s infinite linear;
+}
+
+.Welcome-star-3 {
+    top: 20%;
+    left: 10%;
+    animation: blink 1.3s infinite linear;
+}
+
+.Welcome-star-4 {
+    top: 70%;
+    left: 20%;
+    animation: blink 1.2s infinite linear;
+}
+
+.Welcome-star-5 {
+    top: 60%;
+    left: 75%;
+    animation: blink 1.8s infinite linear;
+}
+
+.Welcome-day {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    animation: day 20s infinite linear;
+}
+
+.Welcome-cloud {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+}
+
+.Welcome-cloud-1 {
+    top: 50%;
+    animation: float 7s infinite linear;
+}
+
+.Welcome-cloud-2 {
+    top: 25%;
+    animation: float 11s infinite linear;
+}
+
+.Welcome-cloud-3 {
+    top: 20%;
+    animation: float 13s infinite linear;
+}
+
+.Welcome-cloud-4 {
+    top: 70%;
+    animation: float 17s infinite linear;
+}
+
+.Welcome-cloud-5 {
+    top: 60%;
+    animation: float 19s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        left: calc(0% - 100px);
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes night {
+    0% {
+        opacity: 0;
+    }
+    6.25% {
+        opacity: 1;
+    }
+    43.75% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes day {
+    0% {
+        opacity: 0;
+    }
+    6.25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    56.25% {
+        opacity: 1;
+    }
+    93.75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+.Welcome-SunAndMoon {
+    position: absolute;
+    left: calc(50% - 400px);
+    width: 800px;
+}
+
+
+}
+
+@media screen and (max-width: 650px) {
+
+.Welcome-centerText {
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: cursive;
+}
+
+}

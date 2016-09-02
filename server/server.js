@@ -28,12 +28,10 @@ app.use(Express.static(__dirname + '/public'))
 app.use('*', function(req, res) {
     const initialState = {},
         ogTagParams = {
-            url: "http://dumdumgenius.com",
+            url: "http://yulonwed.dumdumgenius.com",
             type: 'blog',
-            title: "DumDumGenius' Blog",
-            description: "Welcome to dumdumgenius' blog, it's my first blog, enjoy every thing you see"
-                + " and of course, if you have any advice to me, please contact me, the email can be found"
-                + " in about me page, thank you, sincerely, Messi Yang"
+            title: "Yulon's wedding",
+            description: "Welcome to Yulon's wedding site!!!!!"
         }
     handleRender(req, res, initialState, ogTagParams)
 })
@@ -78,8 +76,8 @@ function renderFullPage(html, initialState, ogTagParams) {
                 <meta property="og:type" content="${ogTagParams.type}" />
                 <meta property="og:title" content="${ogTagParams.title}" />
                 <meta property="og:description" content="${ogTagParams.description}" />
-                <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/myblog-1decf.appspot.com/o/coverImages%2FfbCoverPhoto.jpg?alt=media" />
-                <meta property="og:image:width" content="400" />
+                <meta property="og:image" content="http://pic.pimg.tw/onlyyouphoto/1472641832-2616462321_s.jpg" />
+                <meta property="og:image:width" content="200" />
                 <meta property="og:image:height" content="200" />
   	  	  	 	<title>${ogTagParams.title}</title>
                 <link rel="stylesheet" type="text/css" href="/styles.css">

@@ -20,41 +20,12 @@ class Welcome extends React.Component {
 	render() {
 		return (
 			<div className="Welcome-mainArea">
-                <div className='Welcome-universeBackgroundArea'>
-                    <span className="Welcome-centerText">DumDumGenius' Blog</span>
-                    <div className="Welcome-logoArea">
-                        <a href="https://www.facebook.com/dumdumgeniusblog/">
-                            <Facebook className="Welcome-faIcon"/>
-                        </a>
-                        <a href="https://github.com/DumDumGeniuss">
-                            <Github className="Welcome-faIcon"/>
-                        </a>
-                        <a href="https://www.facebook.com/dumdumgeniusblog/">
-                            <Twitter className="Welcome-faIcon"/>
-                        </a>
-                        <a href="https://www.facebook.com/dumdumgeniusblog/">
-                            <Google className="Welcome-faIcon"/>
-                        </a>
-                    </div>
-                    <Globe className="Welcome-Earth"/>
-                    <div className="Welcome-SunAndMoon">
-                        <MoonO className="Welcome-MoonO"/>
-                        <SunO className="Welcome-SunO"/>
-                    </div>
-                    <div className="Welcome-night">
-                    	<Star className="Welcome-star Welcome-star-1"/>
-                    	<Star className="Welcome-star Welcome-star-2"/>
-                    	<Star className="Welcome-star Welcome-star-3"/>
-                    	<Star className="Welcome-star Welcome-star-4"/>
-                    	<Star className="Welcome-star Welcome-star-5"/>
-                    </div>
-                    <div className="Welcome-day">
-                    	<Cloud className="Welcome-cloud Welcome-cloud-1"/>
-                    	<Cloud className="Welcome-cloud Welcome-cloud-2"/>
-                    	<Cloud className="Welcome-cloud Welcome-cloud-3"/>
-                    	<Cloud className="Welcome-cloud Welcome-cloud-4"/>
-                    	<Cloud className="Welcome-cloud Welcome-cloud-5"/>
-                    </div>
+                <div className="Welcome-mainPhotoBlock">
+                    <img className="Welcome-mainPhoto Welcome-mainPhoto-1" src="https://img.alicdn.com/imgextra/i3/353930884/TB2zOQqcFXXXXaMXXXXXXXXXXXX_!!353930884.jpg"/>
+                    <img className="Welcome-mainPhoto  Welcome-mainPhoto-2" src="https://img.alicdn.com/imgextra/i4/353930884/TB2kF.ocFXXXXb5XXXXXXXXXXXX_!!353930884.jpg"/>
+                    <img className="Welcome-mainPhoto  Welcome-mainPhoto-3" src="https://img.alicdn.com/imgextra/i1/353930884/TB2GuojcFXXXXcUXXXXXXXXXXXX_!!353930884.jpg"/>
+                    <img className="Welcome-mainPhoto  Welcome-mainPhoto-4" src="https://img.alicdn.com/imgextra/i2/353930884/TB2jr3ecFXXXXXCXpXXXXXXXXXX_!!353930884.jpg"/>
+                    <span className="Welcome-slideText">Welcome to our XXXXXXX</span>
                 </div>
             </div>
         )

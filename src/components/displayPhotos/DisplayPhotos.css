@@ -1,6 +1,7 @@
 .DisplayPhotos-mainArea {
 	position: relative;
 	/*min-height: 100%;*/
+	overflow: hidden;
 }
 
 .DisplayPhotos-photosArea {
@@ -15,10 +16,11 @@
 	top: 10px;
 	right: 10px;
 	cursor: pointer;
+	z-index: 2;
 }
 
 @media screen and (max-width: 900px) {
 .DisplayPhotos-photosArea {
-	width: 100%;
+	width: 100vw;
 }
 }

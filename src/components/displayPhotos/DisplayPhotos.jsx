@@ -21,7 +21,7 @@ export default class DisplayPhotos extends React.Component {
 					{
 						photos.map( (item) => {
 							return (
-								<SimplePhotoBox photo={item} photoWidth={'25%'} photoHeight={"25%"}/>
+								<SimplePhotoBox photo={item} photoWidth={'100px'} photoHeight={"100px"}/>
 							)
 						})
 					}

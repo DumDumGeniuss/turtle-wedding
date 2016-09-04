@@ -4,6 +4,7 @@
 }
 
 .DisplayPhotos-photosArea {
+	display: inline-block;
 	margin-left: 50%;
 	transform: translate(-50%, 0%);
 }
@@ -17,6 +18,5 @@
 
 @media screen and (max-width: 800px) {
 .DisplayPhotos-photosArea {
-	width: 100%;
 }
 }

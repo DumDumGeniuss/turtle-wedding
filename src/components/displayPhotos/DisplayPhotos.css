@@ -1,5 +1,6 @@
 .DisplayPhotos-mainArea {
 	position: relative;
+	min-height: 100%;
 }
 
 .DisplayPhotos-photosArea {

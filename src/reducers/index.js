@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import paintings from './paintings'
+import photos from './photos'
 
 const rootReducer = combineReducers({
-	paintings
+	photos
 })
 
 export default rootReducer

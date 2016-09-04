@@ -5,13 +5,6 @@ import url from 'url'
 import 'isomorphic-fetch'
 
 export function addPhoto(photo) {
-	return {
-		type: photosActionTypes.ADD_PHOTO,
-		photo
-	}
-}
-
-export function addPhoto(photo) {
 	const data = new FormData();
 	data.append("content", photo.content);
 	data.append("sequence", photo.sequence);
@@ -32,10 +25,16 @@ export function addPhoto(photo) {
 	// }
 }
 
-export function deletePhoto() {
-	return {
-		type: photosActionTypes.DELETE_PHOTO
-	}
+export function deletePhoto(id) {
+	let params = {
+		method: 'DELETE'
+	};
+	fetch(config.apiUrl + '/photos/' +  id, params)
+	.then(res => {
+		console.log(res)
+	}).catch(err => {
+		console.log(err)
+	})
 }
 
 export function queryPhotosOptimistic(photos) {

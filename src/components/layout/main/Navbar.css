@@ -6,7 +6,8 @@
     overflow: auto;
     text-align: center;
     line-height: 50px;
-    background-color: #ffe9f3;
+    /*background-color: #ffe9f3;*/
+    background-color: #66dcff;
     width: 100%;
     z-index: 3;
 }
@@ -20,7 +21,8 @@
     text-align: center;
     line-height: 50px;
     /*background-color: rgba(50, 50, 50, 0.22);*/
-    background-color: #ffe9f3;
+    /*background-color: #ffe9f3;*/
+    background-color: #66dcff;
     width: 100%;
     z-index: 3;
 }

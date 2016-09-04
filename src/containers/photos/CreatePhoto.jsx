@@ -30,7 +30,7 @@ class CreatePhoto extends React.Component {
                 update_at: self.state.update_at
             }
         photosActions.addPhoto(params)
-        // self.props.history.push('/tutorials');
+        self.props.history.push('/photos');
     }
     handleContentChange(event) {
         this.setState({
@@ -57,7 +57,7 @@ class CreatePhoto extends React.Component {
                     </div>
                     <div>
                         <label className="CreatePhotos-inputLabel">photo</label>
-                        <input type="file" name="photo" id="photo" accept="image/*" />
+                        <input className="CreatePhotos-input" type="file" name="photo" id="photo" accept="image/*" />
                     </div>
                     <div>
                         <button className="CreatePhotos-submitButton" onClick={this.createPhoto.bind(this)}>submit</button>

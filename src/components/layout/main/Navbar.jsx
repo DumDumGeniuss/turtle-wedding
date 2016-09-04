@@ -53,10 +53,10 @@ class Navbar extends React.Component {
 		return (
 			<div>
                 <nav className={navbarClass}>
-                    <Link className="MainNavbar-navbarItem" to="/">Home</Link>
-                    <Link className="MainNavbar-navbarItem" to="/profile">Profile</Link>
-                    <Link className="MainNavbar-navbarItem" to="/tutorials">Tutorials</Link>
-                    <Link className="MainNavbar-navbarItem" to="/masterpieces">Masterpieces</Link>
+                    <Link className="MainNavbar-navbarItem" to="/">主頁</Link>
+                    <Link className="MainNavbar-navbarItem" to="/profile">關於我們</Link>
+                    <Link className="MainNavbar-navbarItem" to="/photos">相簿</Link>
+                    <Link className="MainNavbar-navbarItem" to="/masterpieces">祝福</Link>
                     
                     <Link className="MainNavbar-navbarItemCollapse" to="/">
                         <Home />
@@ -64,7 +64,7 @@ class Navbar extends React.Component {
                     <Link className="MainNavbar-navbarItemCollapse" to="/profile">
                          <User />
                     </Link>
-                    <Link className="MainNavbar-navbarItemCollapse" to="/tutorials">
+                    <Link className="MainNavbar-navbarItemCollapse" to="/photos">
                         <Book />
                     </Link>
                     <Link className="MainNavbar-navbarItemCollapse" to="/masterpieces">

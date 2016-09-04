@@ -3,6 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import  * as photosActions from '../../actions/photosActions'
+import DisplayPhotos from '../../components/displayPhotos/DisplayPhotos.jsx'
 
 if (process.env.BROWSER) {
     require('./Photos.css')
@@ -29,11 +30,11 @@ class Photos extends React.Component {
 
         //Redux
         let { state, location } = self.props
-        let photos = state.photos
-        console.log(photos);
+        let photos = state.photos.photos || []
 
         return (
             <div className="Photos-mainArea">
+                <DisplayPhotos photos={photos}/>
             </div>
         )
     }

@@ -4,6 +4,13 @@ import es6Promise from 'es6-promise'
 import url from 'url'
 import 'isomorphic-fetch'
 
+export function addPhotoOptimistic(photo) {
+	return {
+		type: photosActionTypes.ADD_PHOTO,
+		photo
+	}
+}
+
 export function addPhoto(photo) {
 	const data = new FormData();
 	data.append("content", photo.content);
@@ -18,7 +25,7 @@ export function addPhoto(photo) {
 		fetch(config.apiUrl + '/photos', params)
 		.then(res => {
 			console.log(res)
-			// dispatch(addArticleOptimistic());
+			// dispatch(addPhotoOptimistic());
 		}).catch(err => {
 			console.log(err)
 		})

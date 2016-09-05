@@ -6,6 +6,7 @@ import  * as photosActions from '../../actions/photosActions'
 import {Link} from 'react-router'
 import Star from 'react-icons/lib/fa/star'
 import Bans from 'react-icons/lib/fa/ban'
+import PlusSquare from 'react-icons/lib/fa/plus-square'
 import SimplePhotoBox from '../../components/box/simplePhotoBox/SimplePhotoBox.jsx'
 
 if (process.env.BROWSER) {
@@ -43,7 +44,7 @@ class Photos extends React.Component {
             <div className="Photos-mainArea">
                 <div className="Photos-displayPhotos">
                     <Link className="Photos-addPhoto" to={'/photos/create'}>
-                        <Star />
+                        <PlusSquare />
                     </Link>
                     <div className="Photos-photosArea">
                         {

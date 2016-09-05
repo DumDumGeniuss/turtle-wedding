@@ -6,11 +6,14 @@ let initState = {
 }
 
 export default function counter(state = initState, action) {
+	let photos = state.photos
 	switch (action.type) {
 		case photosActionTypes.QUERY_PHOTOS:
 			return Object.assign({}, state, {photos: action.photos})
+		case photosActionTypes.ADD_PHOTO:
+			photos.push(action.photo)
+			return Object.assign({}, state, {photos: photos})
 		case photosActionTypes.DELETE_PHOTO:
-			let photos = state.photos
 			for(let i in photos) {
 				if(photos[i]._id == action.photoId) {
 					photos.splice(i, 1);

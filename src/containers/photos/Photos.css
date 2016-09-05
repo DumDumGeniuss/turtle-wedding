@@ -16,10 +16,11 @@
 }
 
 .Photos-addPhoto {
-	position: absolute;
-	top: 10px;
+	position: fixed;
+	top: 60px;
 	right: 10px;
 	cursor: pointer;
+	font-size: 30px;
 	z-index: 2;
 }
 

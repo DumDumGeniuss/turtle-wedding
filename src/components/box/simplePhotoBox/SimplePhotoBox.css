@@ -1,7 +1,7 @@
 .SimplePhotoBox-mainArea {
 	display: inline-block;
 	position: relative;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	overflow: hidden;
 	width: 150px;
 	height: 150px;
@@ -9,6 +9,8 @@
 
 .SimplePhotoBox-deleteIcon {
 	position: absolute;
+	left: 10px;
+	top: 10px;
 	cursor: pointer;
 	z-index: 2;
 	color: red;

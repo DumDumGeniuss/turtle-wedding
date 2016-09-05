@@ -20,8 +20,10 @@ class Photos extends React.Component {
         }
     }
     componentWillMount() {
-        const { actions, location, params } = this.props
-        actions.queryPhotos()
+        const { actions, location, params, state } = this.props
+        if(state.photos.photos.length == 0) {
+            actions.queryPhotos()
+        }
     }
     componentWillReceiveProps(nextProps) {
     }

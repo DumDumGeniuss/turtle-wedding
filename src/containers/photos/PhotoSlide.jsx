@@ -22,7 +22,7 @@ class PhotoSlide extends React.Component {
     }
     componentWillMount() {
         const { actions, location, params, state } = this.props
-        if(state.photos.photos != []) {
+        if(state.photos.photos.length == 0) {
             actions.queryPhotos()
         }
     }

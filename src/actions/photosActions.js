@@ -7,7 +7,7 @@ import 'isomorphic-fetch'
 export function addPhoto(photo) {
 	const data = new FormData();
 	data.append("content", photo.content);
-	data.append("sequence", photo.sequence);
+	data.append("sequence", photo.sequence || 0);
 	data.append("photo", photo.photo);
 	// return function(dispatch) {
 		let params = {
@@ -25,16 +25,25 @@ export function addPhoto(photo) {
 	// }
 }
 
+export function deletePhotoOptimistic(photoId) {
+	return {
+		type: photosActionTypes.DELETE_PHOTO,
+		photoId
+	}
+}
+
 export function deletePhoto(id) {
 	let params = {
 		method: 'DELETE'
 	};
-	fetch(config.apiUrl + '/photos/' +  id, params)
-	.then(res => {
-		console.log(res)
-	}).catch(err => {
-		console.log(err)
-	})
+	return function(dispatch) {
+		fetch(config.apiUrl + '/photos/' +  id, params)
+		.then(res => {
+			dispatch(deletePhotoOptimistic(id))
+		}).catch(err => {
+			console.log(err)
+		})
+	}
 }
 
 export function queryPhotosOptimistic(photos) {

@@ -13,7 +13,10 @@ export default class SimplePhotoBox extends React.Component {
 
 		return (
 			<div className="SimplePhotoBox-mainArea">
-				<img className="SimplePhotoBox-photo" src={config.apiUrl + '/files/photos/' + photo.fileName}/>
+				<div className="SimplePhotoBox-deleteIcon">{this.props.children}</div>
+				<a className="SimplePhotoBox-photoLink" href="http://www.mitie.com/media-library/services/specialist-services/pest-control/pest-photos/cockroach.jpg">
+					<img className="SimplePhotoBox-photo" src={config.apiUrl + '/files/photos/' + photo.fileName}/>
+				</a>
 			</div>
 		)
 	}

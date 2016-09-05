@@ -30,6 +30,7 @@ class CreatePhoto extends React.Component {
                 update_at: self.state.update_at
             }
         photosActions.addPhoto(params)
+        photosActions.queryPhotos()
         self.props.history.push('/photos');
     }
     handleContentChange(event) {
@@ -42,15 +43,15 @@ class CreatePhoto extends React.Component {
             sequence: event.target.value
         })
     }
+                    // <div>
+                    //     <label className="CreatePhotos-inputLabel">Sequence</label>
+                    //     <input className="CreatePhotos-input" onChange={this.handleSequenceChange.bind(this)}></input>
+                    // </div>
     render() {
         return (
             <div>
                 <div>
                     <span className="CreatePhotos-title"><b>Create New Photo!</b></span>
-                    <div>
-                        <label className="CreatePhotos-inputLabel">Sequence</label>
-                        <input className="CreatePhotos-input" onChange={this.handleSequenceChange.bind(this)}></input>
-                    </div>
                     <div>
                         <label className="CreatePhotos-inputLabel">content</label>
                         <textarea className="CreatePhotos-textInput" onChange={this.handleContentChange.bind(this)}></textarea>

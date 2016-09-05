@@ -7,12 +7,23 @@
 	height: 150px;
 }
 
+.SimplePhotoBox-deleteIcon {
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+	color: red;
+}
+
 .SimplePhotoBox-photo {
 	position: absolute;
 	width: 100%;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.SimplePhotoBox-photoLink {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {

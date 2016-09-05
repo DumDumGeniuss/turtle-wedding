@@ -1,3 +1,30 @@
 .Photos-mainArea {
 	min-height: 100vh;
 }
+
+.Photos-displayPhotos {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.Photos-photosArea {
+	width: 900px;
+	display: inline-block;
+	margin-left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.Photos-addPhoto {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+@media screen and (max-width: 900px) {
+.Photos-photosArea {
+	width: 100vw;
+}
+}

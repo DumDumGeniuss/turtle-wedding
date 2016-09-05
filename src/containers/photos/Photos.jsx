@@ -16,7 +16,7 @@ if (process.env.BROWSER) {
 class Photos extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {      
+        this.state = {
         }
     }
     componentWillMount() {
@@ -39,7 +39,6 @@ class Photos extends React.Component {
         //Redux
         let { state, location } = self.props
         let photos = state.photos.photos || []
-
         return (
             <div className="Photos-mainArea">
                 <div className="Photos-displayPhotos">
@@ -50,8 +49,8 @@ class Photos extends React.Component {
                         {
                             photos.map( (item) => {
                                 return (
-                                    <SimplePhotoBox key={item._id} photo={item}>
-                                        <Bans onClick={self.deletePhoto.bind(self, item._id)}/>
+                                    <SimplePhotoBox onClick={ self.deletePhoto.bind(self, item._id) } key={item._id} photo={item}>
+                                        <Bans onClick={ self.deletePhoto.bind(self, item._id) }/>
                                     </SimplePhotoBox>
                                 )
                             })

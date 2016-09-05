@@ -1,0 +1,79 @@
+.PhotoSlide-mainArea {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
+}
+
+.PhotoSlide-blackCanvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+.PhotoSlide-photosArea {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(256, 256, 256, 0.3);
+	z-index: 2;
+	overflow: hidden;
+}
+
+.PhotoSlide-photo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.photoSlide-angleLeft {
+	position: absolute;
+	color: white;
+	left: 10px;
+	top: 50%;
+	font-size: 30px;
+	transform: translate(0%, -50%);
+	z-index: 3;
+}
+
+.photoSlide-angleRight {
+	position: absolute;
+	color: white;
+	right: 10px;
+	top: 50%;
+	font-size: 30px;
+	transform: translate(0%, -50%);
+	z-index: 3;
+}
+
+/* Portrait height is larger than the width*/
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+    .PhotoSlide-photosArea {
+    	width: 100vw;
+    	height: 100vw;
+    }
+    .PhotoSlide-photo {
+    	width: 100%;
+    	height: none;
+    }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles */
+    .PhotoSlide-photosArea {
+    	width: 100vh;
+    	height: 100vh;
+    }
+    .PhotoSlide-photo {
+    	width: none;
+    	height: 100%;
+    }
+}

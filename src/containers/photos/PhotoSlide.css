@@ -28,29 +28,35 @@
 
 .PhotoSlide-photo {
 	position: absolute;
+	display: inline-block;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);	
 }
 
-.photoSlide-angleLeft {
+.photoSlide-angle {
 	position: absolute;
 	color: white;
-	left: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid white;
+	border-radius: 30px;
 	top: 50%;
 	font-size: 30px;
 	transform: translate(0%, -50%);
 	z-index: 3;
 }
 
+.photoSlide-angle:hover {
+	color: yellow;
+	border: 1px solid yellow;
+}
+
+.photoSlide-angleLeft {
+	left: 10px;
+}
+
 .photoSlide-angleRight {
-	position: absolute;
-	color: white;
 	right: 10px;
-	top: 50%;
-	font-size: 30px;
-	transform: translate(0%, -50%);
-	z-index: 3;
 }
 
 /* Portrait height is larger than the width*/
@@ -73,7 +79,7 @@
     	height: 100vh;
     }
     .PhotoSlide-photo {
-    	width: none;
-    	height: 100%;
+    	width: 100%;
+    	height: none;
     }
 }

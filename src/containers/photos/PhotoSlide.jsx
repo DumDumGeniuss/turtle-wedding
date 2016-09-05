@@ -37,7 +37,7 @@ class PhotoSlide extends React.Component {
         for(let i = 0; i < photos.length; i++) {
             photos[i].show = 'none'
             if(photos[i]._id == id) {
-                photos[i].show = 'absolute'
+                photos[i].show = 'inline-block'
                 res = i
             }
         }
@@ -56,11 +56,11 @@ class PhotoSlide extends React.Component {
 
         return (
             <div className="PhotoSlide-mainArea">
-                <Link to={"/photos/slide?photoId=" + prevPhotoId} style={ {display: prevPhotoId?'inline':'none'} }>
-                    <AngleLeft className="photoSlide-angleLeft"/>
+                <Link to={"/photos/slide?photoId=" + prevPhotoId} style={ {display: prevPhotoId?'inline':'none', cursor: 'pointer'} }>
+                    <AngleLeft className="photoSlide-angle photoSlide-angleLeft"/>
                 </Link>
-                <Link to={"/photos/slide?photoId=" + nextPhotoId} style={ {display: nextPhotoId?'inline':'none'} }>
-                    <AngleRight className="photoSlide-angleRight"/>
+                <Link to={"/photos/slide?photoId=" + nextPhotoId} style={ {display: nextPhotoId?'inline':'none', cursor: 'pointer'} }>
+                    <AngleRight className="photoSlide-angle photoSlide-angleRight"/>
                 </Link>
                 <Link to="/photos" style={ {cursor: "pointer"} }>
                     <div className="PhotoSlide-blackCanvas">

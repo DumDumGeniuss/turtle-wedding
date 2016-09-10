@@ -7,7 +7,6 @@
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
-	background-color: white;
 }
 
 .Photos-photosArea {
@@ -15,6 +14,8 @@
 	display: inline-block;
 	margin-left: 50%;
 	transform: translate(-50%, 0%);
+	background-color: white;
+	min-height: 100%;
 }
 
 .Photos-addPhoto {

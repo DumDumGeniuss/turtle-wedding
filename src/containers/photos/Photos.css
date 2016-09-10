@@ -1,11 +1,13 @@
 .Photos-mainArea {
 	min-height: 100vh;
+	background-color: #e9ebee;
 }
 
 .Photos-displayPhotos {
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
+	background-color: white;
 }
 
 .Photos-photosArea {

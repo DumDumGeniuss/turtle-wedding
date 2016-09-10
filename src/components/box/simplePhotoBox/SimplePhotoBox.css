@@ -4,7 +4,7 @@
 	/*border: 1px solid black;*/
 	overflow: hidden;
 	width: 150px;
-	height: 150px;
+	height: 120px;
 }
 
 .SimplePhotoBox-deleteIcon {
@@ -18,7 +18,7 @@
 
 .SimplePhotoBox-photo {
 	position: absolute;
-	width: 100%;
+	width: 125%;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -32,6 +32,6 @@
 @media screen and (max-width: 900px) {
 .SimplePhotoBox-mainArea {
 	width: 50vw;
-	height: 50vw;
+	height: 40vw;
 }
 }

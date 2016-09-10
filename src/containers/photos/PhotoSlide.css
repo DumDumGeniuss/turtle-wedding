@@ -81,6 +81,23 @@
 	right: 10px;
 }
 
+@media screen and (max-width: 900px) {
+.PhotoSlide-buttonArea {
+	width: 70px;
+	height: 140px;
+}
+
+.PhotoSlide-leftButtonArea {
+	border-top-right-radius: 70px;
+	border-bottom-right-radius: 70px;
+}
+
+.PhotoSlide-rightButtonArea {
+	border-top-left-radius: 70px;
+	border-bottom-left-radius: 70px;
+}
+}
+
 /* Portrait height is larger than the width*/
 @media screen and (orientation:portrait) {
     /* Portrait styles */

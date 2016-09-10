@@ -5,9 +5,18 @@
     overflow: hidden;
 }
 
+.Welcome-blackCanvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.25;
+}
+
 .Welcome-mainPhoto {
     position: absolute;
-    min-width: 100%;
+    min-width: 120%;
     min-height: 100%;
     left: 50%;
     top: 50%;
@@ -23,10 +32,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 2;
     font-size: 2em;
     text-align: center;
-    color: #ffbc00;
+    color: #8e2256;
 }
 
 .Welcome-mainPhoto-1 {
@@ -56,10 +65,10 @@
         opacity: 0;
     }
     15% {
-        opacity: 0.35;
+        opacity: 0.25;
     }
     30% {
-        opacity: 0.35;
+        opacity: 0.25;
     }
     40% {
         opacity: 0;

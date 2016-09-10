@@ -33,15 +33,17 @@
     font-size: 1.2em;
     font-family: monospace;
     width: 200px;
+    height: 50px;
     cursor: pointer;
 }
 
 .MainNavbar-navbarItem:hover {
-    color: #F1FF5A;
+    color: white;
+    border-bottom: 5px solid white;
 }
 
 .MainNavbar-navbarItemCollapse {
-    color: white;
+    color: #987b89;
     display: none;
     width: 80px;
     height: 50px;
@@ -50,7 +52,8 @@
 }
 
 .MainNavbar-navbarItemCollapse:hover {
-    color: #F1FF5A;
+    color: white;
+    border-bottom: 5px solid white;
 }
 
 @media screen and (max-width: 800px) {

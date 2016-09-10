@@ -25,7 +25,7 @@ class Welcome extends React.Component {
                     <img className="Welcome-mainPhoto  Welcome-mainPhoto-2" src="https://img.alicdn.com/imgextra/i4/353930884/TB2kF.ocFXXXXb5XXXXXXXXXXXX_!!353930884.jpg"/>
                     <img className="Welcome-mainPhoto  Welcome-mainPhoto-3" src="https://img.alicdn.com/imgextra/i1/353930884/TB2GuojcFXXXXcUXXXXXXXXXXXX_!!353930884.jpg"/>
                     <img className="Welcome-mainPhoto  Welcome-mainPhoto-4" src="https://img.alicdn.com/imgextra/i2/353930884/TB2jr3ecFXXXXXCXpXXXXXXXXXX_!!353930884.jpg"/>
-                    <span className="Welcome-slideText">Welcome to our XXXXXXX</span>
+                    <span className="Welcome-slideText">Welcome to our wedding</span>
                 </div>
             </div>
         )

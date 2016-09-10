@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 1;
     background-color: black;
-    opacity: 0.25;
+    opacity: 0.15;
 }
 
 .Welcome-mainPhotoBlock {
@@ -21,7 +21,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.35;
+    opacity: 0.25;
     z-index: 0;
     opacity: 0;
 }
@@ -35,7 +35,7 @@
     z-index: 2;
     font-size: 2em;
     text-align: center;
-    color: #8e2256;
+    color: #d24e8d;
 }
 
 .Welcome-mainPhoto-1 {

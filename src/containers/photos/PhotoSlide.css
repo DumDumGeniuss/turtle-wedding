@@ -12,7 +12,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.9);
 	z-index: 1;
 }
 
@@ -34,21 +34,38 @@
 	transform: translate(-50%, -50%);	
 }
 
+.PhotoSlide-buttonArea {
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	width: 80px;
+	height: 100%;
+	z-index: 3;
+}
+
+.PhotoSlide-buttonArea:hover {
+	background-color: #DEDEDE;
+	opacity: 0.5;
+}
+
+.PhotoSlide-leftButtonArea {
+	left: 0px;
+}
+
+.PhotoSlide-rightButtonArea {
+	right: 0px;
+}
+
 .photoSlide-angle {
 	position: absolute;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: 1px solid white;
-	border-radius: 30px;
+	color: #BCBCBC;
 	top: 50%;
-	font-size: 30px;
+	font-size: 60px;
 	transform: translate(0%, -50%);
 	z-index: 3;
 }
 
 .photoSlide-angle:hover {
-	color: yellow;
-	border: 1px solid yellow;
 }
 
 .photoSlide-angleLeft {

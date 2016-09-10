@@ -57,10 +57,14 @@ class PhotoSlide extends React.Component {
         return (
             <div className="PhotoSlide-mainArea">
                 <Link to={"/photos/slide?photoId=" + prevPhotoId} style={ {display: prevPhotoId?'inline':'none', cursor: 'pointer'} }>
-                    <AngleLeft className="photoSlide-angle photoSlide-angleLeft"/>
+                    <div className="PhotoSlide-buttonArea PhotoSlide-leftButtonArea">
+                        <AngleLeft className="photoSlide-angle photoSlide-angleLeft"/>
+                    </div>
                 </Link>
                 <Link to={"/photos/slide?photoId=" + nextPhotoId} style={ {display: nextPhotoId?'inline':'none', cursor: 'pointer'} }>
-                    <AngleRight className="photoSlide-angle photoSlide-angleRight"/>
+                    <div className="PhotoSlide-buttonArea PhotoSlide-rightButtonArea">
+                        <AngleRight className="photoSlide-angle photoSlide-angleRight"/>
+                    </div>
                 </Link>
                 <Link to="/photos" style={ {cursor: "pointer"} }>
                     <div className="PhotoSlide-blackCanvas">

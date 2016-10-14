@@ -23,11 +23,7 @@ class CreatePhoto extends React.Component {
         let { actions } = this.props,
             self = this,
             params = {
-                content: self.state.content,
-                sequence: parseInt(self.state.sequence, 10),
-                photo: document.getElementById('photo').files[0],
-                create_at: self.state.create_at,
-                update_at: self.state.update_at
+                photo: document.getElementById('photo').files
             }
         photosActions.addPhoto(params)
         photosActions.queryPhotos()
@@ -47,18 +43,18 @@ class CreatePhoto extends React.Component {
                     //     <label className="CreatePhotos-inputLabel">Sequence</label>
                     //     <input className="CreatePhotos-input" onChange={this.handleSequenceChange.bind(this)}></input>
                     // </div>
+                    // <div>
+                    //     <label className="CreatePhotos-inputLabel">content</label>
+                    //     <textarea className="CreatePhotos-textInput" onChange={this.handleContentChange.bind(this)}></textarea>
+                    // </div>
     render() {
         return (
             <div>
                 <div>
                     <span className="CreatePhotos-title"><b>Create New Photo!</b></span>
                     <div>
-                        <label className="CreatePhotos-inputLabel">content</label>
-                        <textarea className="CreatePhotos-textInput" onChange={this.handleContentChange.bind(this)}></textarea>
-                    </div>
-                    <div>
                         <label className="CreatePhotos-inputLabel">photo</label>
-                        <input className="CreatePhotos-input" type="file" name="photo" id="photo" accept="image/*" />
+                        <input className="CreatePhotos-input" type="file" name="photo" id="photo" accept="image/*" multiple/>
                     </div>
                     <div>
                         <button className="CreatePhotos-submitButton" onClick={this.createPhoto.bind(this)}>submit</button>

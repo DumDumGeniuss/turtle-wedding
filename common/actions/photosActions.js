@@ -13,9 +13,10 @@ export function addPhotoOptimistic(photo) {
 
 export function addPhoto(photo) {
 	const data = new FormData();
-	data.append("content", photo.content);
-	data.append("sequence", photo.sequence || 0);
-	data.append("photo", photo.photo);
+	let photos = photo.photo;
+	for(var key in photos) {
+		data.append("photo", photos[key]);
+	}
 	// return function(dispatch) {
 		let params = {
 			method: 'POST',

@@ -13,10 +13,10 @@ import Promise from 'promise'
 import rp from 'request-promise'
 import url from 'url'
 
-import blogStore from '../src/store/blogStore'
+import blogStore from '../common/store/blogStore'
 import createLocation from 'history/lib/createLocation'
-import rootReducer from '../src/reducers'
-import routes from '../src/route/routes.jsx'
+import rootReducer from '../common/reducers'
+import routes from '../common/route/routes.jsx'
 
 import config from '../server/config/production'
 

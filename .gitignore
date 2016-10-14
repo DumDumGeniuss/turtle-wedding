@@ -6,5 +6,5 @@ main.min.js
 server.main.js
 .env
 server/config/production.js
-src/constants/config.js
+common/constants/config.js
 public/styles.css

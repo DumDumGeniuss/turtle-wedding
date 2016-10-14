@@ -41,10 +41,11 @@ class Photos extends React.Component {
         //Redux
         let { state, location } = self.props
         let photos = state.photos.photos || []
+        let superMode = location.query.super
         return (
             <div className="Photos-mainArea">
                 <div className="Photos-displayPhotos">
-                    <Link className="Photos-addPhoto" to={'/photos/create'}>
+                    <Link className="Photos-addPhoto" to={'/photos/create'} style={ {display: superMode?'initial':'none'} }>
                         <PlusSquare />
                     </Link>
                     <div className="Photos-photosArea">
@@ -52,7 +53,7 @@ class Photos extends React.Component {
                             photos.map( (item) => {
                                 return (
                                     <SimplePhotoBox onClick={ self.deletePhoto.bind(self, item._id) } key={item._id} photo={item}>
-                                        <Bans onClick={ self.deletePhoto.bind(self, item._id) }/>
+                                        <Bans onClick={ self.deletePhoto.bind(self, item._id) } style={ {display: superMode?'initial':'none'} }/>
                                     </SimplePhotoBox>
                                 )
                             })
